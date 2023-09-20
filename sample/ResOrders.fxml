@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResOrders">
+   <children>
+      <Label fx:id="rsnm" alignment="CENTER" layoutY="6.0" prefHeight="47.0" prefWidth="700.0" text="Restaurant">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <Label layoutX="6.0" layoutY="65.0" prefHeight="17.0" prefWidth="199.0" text="New Orders">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tabl" layoutX="8.0" layoutY="105.0" prefHeight="248.0" prefWidth="685.0">
+        <columns>
+          <TableColumn fx:id="cat" prefWidth="233.0" text="Category of Food" />
+            <TableColumn fx:id="nm" prefWidth="305.0" text="Food Name" />
+            <TableColumn fx:id="prc" prefWidth="145.0" text="Food Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="homeBt" layoutX="55.0" layoutY="725.0" mnemonicParsing="false" onAction="#backToHome" text="Back TO Home" />
+      <Button fx:id="orDone" layoutX="566.0" layoutY="725.0" mnemonicParsing="false" onAction="#OrderDone" text="Orders Done" />
+      <Label fx:id="test" layoutX="456.0" layoutY="65.0" prefHeight="52.0" prefWidth="219.0" text="Label" />
+      <TableView fx:id="tabl1" layoutX="8.0" layoutY="433.0" prefHeight="248.0" prefWidth="685.0">
+         <columns>
+            <TableColumn fx:id="cat1" prefWidth="233.0" text="Category of Food" />
+            <TableColumn fx:id="nm1" prefWidth="305.0" text="Food Name" />
+            <TableColumn fx:id="prc1" prefWidth="145.0" text="Food Price" />
+         </columns>
+      </TableView>
+      <Label layoutX="6.0" layoutY="400.0" prefHeight="17.0" prefWidth="199.0" text="Existing Orders">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

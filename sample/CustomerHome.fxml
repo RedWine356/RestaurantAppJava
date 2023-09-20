@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rName" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CustomerHome">
+   <children>
+      <Label fx:id="customer" alignment="CENTER" layoutX="-1.0" layoutY="14.0" prefHeight="50.0" prefWidth="1100.0" text="customer" textAlignment="CENTER">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="kfc" fitHeight="150.0" fitWidth="155.0" layoutX="7.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="ihop" fitHeight="150.0" fitWidth="155.0" layoutX="178.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="starbucks" fitHeight="150.0" fitWidth="155.0" layoutX="362.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="mcdonalds" fitHeight="150.0" fitWidth="155.0" layoutX="860.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="logout" layoutX="14.0" layoutY="743.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="40.0" prefWidth="113.0" text="Log Out">
+         <font>
+            <Font size="23.0" />
+         </font></Button>
+      <Label fx:id="desc" alignment="CENTER" layoutX="7.0" layoutY="72.0" prefHeight="50.0" prefWidth="1093.0" text="Label" textFill="#043de8">
+         <font>
+            <Font name="AppleMyungjo Regular" size="25.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="528.0" layoutY="305.0" prefHeight="495.0" prefWidth="565.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="119.0" text="Restaurant Id" />
+          <TableColumn fx:id="cat" prefWidth="155.0" text="Food Category" />
+            <TableColumn fx:id="name" prefWidth="187.0" text="Food Name" />
+            <TableColumn fx:id="price" prefWidth="104.0" text="Food Price" />
+        </columns>
+      </TableView>
+      <Label fx:id="namesrc" layoutX="21.0" layoutY="276.0" prefHeight="32.0" prefWidth="128.0" text="Search By Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="srchbyname" layoutX="192.0" layoutY="279.0" prefHeight="26.0" prefWidth="167.0" />
+      <Button fx:id="srcName" layoutX="417.0" layoutY="278.0" mnemonicParsing="false" onAction="#srcNameAction" prefHeight="27.0" prefWidth="67.0" text="search">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="srchbynameinres" alignment="CENTER" layoutX="1.0" layoutY="314.0" prefHeight="20.0" prefWidth="525.0" text="Search By Name in a Restaurant:" />
+      <Label fx:id="rname" layoutX="16.0" layoutY="357.0" prefHeight="17.0" prefWidth="155.0" text="Restaurant Name" />
+      <Label fx:id="fnameres" layoutX="14.0" layoutY="392.0" prefHeight="17.0" prefWidth="99.0" text="Food Name" />
+      <TextField fx:id="rnamein" layoutX="197.0" layoutY="353.0" />
+      <TextField fx:id="rfoodin" layoutX="197.0" layoutY="396.0" prefHeight="17.0" prefWidth="160.0" />
+      <Button fx:id="rSrc" layoutX="423.0" layoutY="374.0" mnemonicParsing="false" onAction="#srcNameinResAction" text="Search" />
+      <Separator layoutX="7.0" layoutY="308.0" prefHeight="6.0" prefWidth="517.0" />
+      <Separator layoutX="7.0" layoutY="429.0" prefHeight="6.0" prefWidth="517.0" />
+      <Label fx:id="srchbyCatinres" alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="442.0" prefHeight="20.0" prefWidth="517.0" text="Search By Category in a Restaurant:" />
+      <Label fx:id="rname1" layoutX="16.0" layoutY="486.0" prefHeight="17.0" prefWidth="155.0" text="Restaurant Name" />
+      <TextField fx:id="rnamein1" layoutX="197.0" layoutY="482.0" />
+      <Label fx:id="fnameres1" layoutX="14.0" layoutY="536.0" prefHeight="17.0" prefWidth="99.0" text="Category" />
+      <TextField fx:id="rCat1" layoutX="197.0" layoutY="532.0" prefHeight="17.0" prefWidth="160.0" />
+      <Button fx:id="rSrcCat" layoutX="428.0" layoutY="503.0" mnemonicParsing="false" onAction="#srcCatInResAction" text="Search" />
+      <Separator layoutX="7.0" layoutY="573.0" prefHeight="6.0" prefWidth="517.0" />
+      <Label fx:id="CatSrc" layoutX="21.0" layoutY="591.0" prefHeight="32.0" prefWidth="155.0" text="Search By Category">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="catText" layoutX="197.0" layoutY="594.0" prefHeight="26.0" prefWidth="167.0" />
+      <Button fx:id="srcCat" layoutX="422.0" layoutY="593.0" mnemonicParsing="false" onAction="#srcCatAction" prefHeight="27.0" prefWidth="67.0" text="search">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="home" layoutX="351.0" layoutY="743.0" mnemonicParsing="false" onAction="#backToHomeAction" prefHeight="43.0" prefWidth="145.0" text="Back to Home">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+      <Separator layoutX="7.0" layoutY="637.0" prefHeight="0.0" prefWidth="517.0" />
+      <Label fx:id="srchbyCatinres1" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="640.0" prefHeight="20.0" prefWidth="517.0" text="Search By Price Range" />
+      <TextField fx:id="lower" layoutX="33.0" layoutY="691.0" />
+      <TextField fx:id="high" layoutX="324.0" layoutY="691.0" />
+      <Label alignment="CENTER" layoutX="41.0" layoutY="674.0" prefHeight="17.0" prefWidth="145.0" text="Enter Lower Price" />
+      <Label alignment="CENTER" layoutX="331.0" layoutY="674.0" prefHeight="17.0" prefWidth="145.0" text="Enter Higher Price" />
+      <Button fx:id="srcByPrice" layoutX="235.0" layoutY="717.0" mnemonicParsing="false" onAction="#srcByPriceAction" text="Search" />
+      <Button fx:id="mm" layoutX="50.0" layoutY="120.0" mnemonicParsing="false" onAction="#srcKFC" prefHeight="150.0" prefWidth="155.0" text="hel" />
+      <Button fx:id="mm1" layoutX="314.0" layoutY="120.0" mnemonicParsing="false" onAction="#srcIHOP" prefHeight="150.0" prefWidth="155.0" text="hel" />
+      <Button fx:id="mm11" layoutX="593.0" layoutY="120.0" mnemonicParsing="false" onAction="#srcSTAR" prefHeight="150.0" prefWidth="155.0" text="hel" />
+      <Button fx:id="mm111" layoutX="879.0" layoutY="120.0" mnemonicParsing="false" onAction="#srcMC" prefHeight="150.0" prefWidth="155.0" text="hel" />
+   </children>
+</AnchorPane>

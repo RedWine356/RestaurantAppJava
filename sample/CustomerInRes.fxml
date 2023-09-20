@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="test" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CustomerInRes">
+   <children>
+      <Label alignment="CENTER" layoutX="2.0" layoutY="26.0" prefHeight="44.0" prefWidth="1094.0" text="CUSTOMER IN RESTAURANT">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="img" fitHeight="169.0" fitWidth="242.0" layoutX="82.0" layoutY="41.0" pickOnBounds="true" preserveRatio="true" />
+      <TableView fx:id="tbl" layoutX="467.0" layoutY="193.0" prefHeight="605.0" prefWidth="631.0">
+        <columns>
+          <TableColumn fx:id="rID" prefWidth="103.0" text="Restaurant Id" />
+          <TableColumn fx:id="fcat" prefWidth="173.0" text="Food Category" />
+            <TableColumn fx:id="fname" prefWidth="207.0" text="Food Name" />
+            <TableColumn fx:id="fprice" prefWidth="145.0" text="Food Price" />
+        </columns>
+      </TableView>
+      <Button fx:id="logout" layoutX="39.0" layoutY="734.0" mnemonicParsing="false" onAction="#logoutAction" prefHeight="44.0" prefWidth="84.0" text="Log Out">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="back" layoutX="230.0" layoutY="738.0" mnemonicParsing="false" onAction="#backToHomeAction" prefHeight="37.0" prefWidth="177.0" text="Back To Main Menu">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="ck" layoutX="262.0" layoutY="669.0" mnemonicParsing="false" onAction="#retrieveSelectedItem" prefHeight="37.0" prefWidth="113.0" text="Select Food">
+         <font>
+            <Font size="16.0" />
+         </font></Button>
+      <Button fx:id="csk" layoutX="39.0" layoutY="663.0" mnemonicParsing="false" onAction="#loadList" prefHeight="37.0" prefWidth="84.0" text="See Orders" />
+      <TableView fx:id="tbl2" layoutX="39.0" layoutY="277.0" prefHeight="349.0" prefWidth="332.0">
+        <columns>
+          <TableColumn fx:id="itemName" prefWidth="240.0" text="Name of the Item" />
+          <TableColumn fx:id="itemPrice" prefWidth="90.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="37.0" layoutY="213.0" prefHeight="44.0" prefWidth="332.0" text="Ordered Items">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="466.0" layoutY="125.0" prefHeight="56.0" prefWidth="631.0" text="AVAILABLE  FOOD  ITEMS">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Button fx:id="fn" alignment="CENTER" layoutX="161.0" layoutY="669.0" mnemonicParsing="false" onAction="#order" prefHeight="37.0" prefWidth="72.0" text="Order">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

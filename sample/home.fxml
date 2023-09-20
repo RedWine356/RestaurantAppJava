@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.HomeController">
+   <children>
+      <Label fx:id="message" alignment="CENTER" layoutX="2.0" layoutY="14.0" prefHeight="64.0" prefWidth="693.0" text="i am" textAlignment="CENTER" textFill="#e41010" wrapText="true">
+         <font>
+            <Font name="AppleMyungjo Regular" size="47.0" />
+         </font>
+      </Label>
+      <Button fx:id="button" layoutX="57.0" layoutY="589.0" mnemonicParsing="false" onAction="#logoutAction" text="Logout" />
+      <TableView fx:id="table" layoutX="176.0" layoutY="97.0" prefHeight="700.0" prefWidth="521.0">
+        <columns>
+          <TableColumn fx:id="id" prefWidth="102.0" text="Restaurant ID" />
+          <TableColumn fx:id="name" prefWidth="159.0" text="Food Name" />
+            <TableColumn fx:id="category" prefWidth="165.0" text="Category" />
+            <TableColumn fx:id="price" prefWidth="93.0" text="Price" />
+        </columns>
+      </TableView>
+      <ImageView fx:id="logo" fitHeight="153.0" fitWidth="155.0" layoutX="14.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="check" layoutX="25.0" layoutY="354.0" mnemonicParsing="false" onAction="#viewOrder" prefHeight="35.0" prefWidth="116.0" text="View All Orders" textFill="#e80e0e" />
+      <Button fx:id="ffm" layoutX="16.0" layoutY="435.0" mnemonicParsing="false" onAction="#viewExisting" prefHeight="26.0" prefWidth="137.0" text="View Existing Orders" />
+   </children>
+</AnchorPane>
